@@ -20,7 +20,7 @@
 #
 # # check if file transfer was success
 #
-# if [$? -eq 0]
+# if [ $? -eq 0 ]
 # then
 # 	echo "FILE TRANSFER SUCCESS"
 # else
