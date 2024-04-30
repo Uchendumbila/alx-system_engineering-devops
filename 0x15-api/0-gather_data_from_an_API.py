@@ -18,7 +18,7 @@ if __name__ == '__main__':
             emp_name = req.get('name')
             tasks = list(filter(lambda x: x.get('userId') == id, task_req))
             completed_tasks = list(filter(lambda x: x.get('completed'), tasks))
-            print (
+            print(
                 'Employee {} is done with tasks({}/{}):'.format(
                     emp_name,
                     len(completed_tasks),
