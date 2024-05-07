@@ -16,7 +16,7 @@ def top_ten(subreddit):
     try:
         for post in url.get('data').get('children'):
             print(post.get('data').get('title'))
-    except Exception:
+    except ValueError:
         print(None)
 
 
